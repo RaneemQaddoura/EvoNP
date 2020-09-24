@@ -14,6 +14,15 @@ If you would like to work in an isolated environment which is strongly recommend
 ```
 python3 -m pip install --user -U virtualenv
 ```
+Then create your isolated Python environment by typing this
+```
+virtualenv your_env
+
+```
+Now, everytime you want to active this enviroment, just type the following
+```
+source your_env/bin/active
+```
 
 ## Installation
 - Python 3.xx is required.
