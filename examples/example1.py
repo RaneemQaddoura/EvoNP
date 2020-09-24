@@ -1,6 +1,6 @@
 import sys
 import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src/evonp')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 import EvoNP
 
@@ -24,7 +24,7 @@ mutationProbability = 0.001
 runs = 30
 plot = False
 
-dataset_List = ["VaryDensity.csv","aggregation.csv"]
+dataset_List = ["test.csv","aggregation.csv"]
 
 
 for j in range(len(dataset_List)):
