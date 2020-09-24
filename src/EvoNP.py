@@ -89,6 +89,8 @@ def run(points,nPoints, k, nChromosomes, nGenerations, crossoverProbability, mut
                                       crossoverProbability, mutationProbability, 
                                       nChromosomes, nPoints) 
     
+    generation = generation + 1
+
     # Getting the best solution after iterating finishing all generations.
     population,fitness, labelsPred,bestChromosomeInAllGenerations, bestFitnessInAllGenerations, bestLabelsPredInAllGenerations = generationRun(points, population, k, nChromosomes, sortedDistancesTree, 
                   pointsNearestIndices, pointsNearestDistances,
@@ -103,7 +105,6 @@ def run(points,nPoints, k, nChromosomes, nGenerations, crossoverProbability, mut
     bestChromosomeInAllGenerations = bestChromosome
     sumBestFitness[generation] = sumBestFitness[generation] + bestFitness
 
-    generation = generation + 1
     
     return bestChromosomeInAllGenerations, bestLabelsPredInAllGenerations, bestFitnessInAllGenerations, sumBestFitness
 

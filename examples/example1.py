@@ -21,10 +21,10 @@ nChromosomes = 20#Genetic algorithm parameters: Mating pool size
 nGenerations = 50  # The number of Genetic Algorithm Generations
 crossoverProbability = 0.8
 mutationProbability = 0.001
-runs = 30
-plot = False
+runs = 3
+plot = True
 
-dataset_List = ["test.csv","aggregation.csv"]
+dataset_List = ["VaryDensity.csv","aggregation.csv"]
 
 
 for j in range(len(dataset_List)):
