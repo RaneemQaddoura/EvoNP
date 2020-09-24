@@ -10,7 +10,19 @@ An efficient evolutionary algorithm with Nearest Point is a clustering algorithm
 - treelib: 1.5.5
 
 ## Setup virtual enviroment
-- 
+If you would like to work in an isolated environment which is strongly recommended so that you can work on different projects without having conflicting library versions, install virtualenv by running the following pip command.
+```
+python3 -m pip install --user -U virtualenv
+```
+Then create your isolated Python environment by typing this
+```
+virtualenv your_env
+
+```
+Now, everytime you want to active this enviroment, just type the following
+```
+source your_env/bin/active
+```
 
 ## Installation
 - Python 3.xx is required.
